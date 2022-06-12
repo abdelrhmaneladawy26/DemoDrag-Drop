@@ -10,18 +10,54 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
-}
-.list{
-    background-color: #fff;
-
+    flex-direction: column;
+    gap: 30px;
 }
 .inputs{
+    width: 250px;
+    height: 150px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
+}
+h2{
+    font-size: 30px;
+    text-align: center;
+    padding: 10px 0;
 }
 .inputs .data{
     display: flex;
     flex-direction: column;
     gap: 5px;
-    
+    width: 80%;
+}
+.data input{
+    padding: 4px;
+    border: 1px solid rgb(37, 94, 37);
+}
+.data button{
+    background: rgb(37, 94, 37);
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+    transition: .3s ease;
+}
+.data button:hover{
+    background: rgb(37, 94, 37,.9);
+}
+.list {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 100%;
+}
+.list .box{
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    width: 300px;
 }
